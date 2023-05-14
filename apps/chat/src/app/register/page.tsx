@@ -35,7 +35,7 @@ export default function Register() {
   const handleRegister = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!email || !password || !verificationCode) {
+    if (!email || !password || verificationCode.length !== 0) {
       showToast(Locales.Index.NoneData);
       setSubmitting(false);
       return;
