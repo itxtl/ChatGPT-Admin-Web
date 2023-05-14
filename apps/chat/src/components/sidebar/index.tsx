@@ -63,7 +63,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
   // 设置
   const config = useSettingStore((state) => state.config);
 
-  const notice = useNoticeStore((store) => store.notice) ?? "当前无公告";
+  const notice = useNoticeStore((store) => store.notice) ?? "邀请制度已经推出，成功邀请一人可获得一次重置次数。";
 
   const { data: rateLimit, isLoading: rateLimitLoading } = useLimit();
 
