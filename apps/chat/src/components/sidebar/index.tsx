@@ -63,7 +63,7 @@ export function Sidebar({ children }: { children: React.ReactNode }) {
   // 设置
   const config = useSettingStore((state) => state.config);
 
-  const notice = useNoticeStore((store) => store.notice) ?? "邀请制度已经推出，成功邀请一人可获得一次重置次数。";
+  const notice = useNoticeStore((store) => store.notice) ?? "邀请制度已经推出，成功邀请一人可获得一次重置次数。如需不限制次数版本请前往购买使用：http://fk996.xyz ";
 
   const { data: rateLimit, isLoading: rateLimitLoading } = useLimit();
 
